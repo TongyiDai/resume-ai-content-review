@@ -1,0 +1,23 @@
+{
+  "canvas": {"width": 1200, "height": 675, "ratio": "16:9", "background": "#FFFFFF", "grid": 8},
+  "intent": {
+    "core_message": "只把报告用于核验，不用于自动淘汰和候选人排名",
+    "composition": "matrix-2d",
+    "focus_node": "structured"
+  },
+  "style": {"theme": "geometry-minimal", "accent_color": "#2F6BFF", "line_weight": 1, "corner_radius": 0},
+  "nodes": [
+    {"id": "structured", "type": "point", "label": "结构化追问", "importance": 5},
+    {"id": "manual", "type": "point", "label": "人工复核", "importance": 4},
+    {"id": "materials", "type": "point", "label": "请求补充材料", "importance": 3},
+    {"id": "reject", "type": "point", "label": "自动淘汰", "importance": 2},
+    {"id": "ranking", "type": "point", "label": "按 AI 味排名", "importance": 2},
+    {"id": "verdict", "type": "point", "label": "真假定罪", "importance": 2}
+  ],
+  "edges": [
+    {"from": "structured", "to": "manual", "relation": "允许"},
+    {"from": "materials", "to": "manual", "relation": "允许"},
+    {"from": "reject", "to": "verdict", "relation": "禁止"},
+    {"from": "ranking", "to": "verdict", "relation": "禁止"}
+  ]
+}

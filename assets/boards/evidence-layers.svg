@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">三类证据回答三个问题</title>
+  <desc id="desc">E1 表达信号、E2 内容核验和 E3 来源证据并列分层，不能相加成 AI 含量。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#222222"/></marker>
+  </defs>
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <text x="96" y="92" fill="#111111" font-family="Inter, PingFang SC, sans-serif" font-size="34" font-weight="700">三类证据，三个问题</text>
+  <text x="96" y="126" fill="#666666" font-family="Inter, PingFang SC, sans-serif" font-size="16">不能相加成一个“AI 含量”</text>
+
+  <line x1="598" y1="184" x2="598" y2="526" stroke="#E8E8E8" stroke-width="1"/>
+
+  <polygon points="126,218 506,218 536,202 156,202" fill="#F5F5F5" stroke="#B8B8B8"/>
+  <polygon points="126,218 506,218 506,300 126,300" fill="#FFFFFF" stroke="#B8B8B8"/>
+  <text x="158" y="252" fill="#111111" font-family="Inter, PingFang SC, sans-serif" font-size="22" font-weight="700">E1</text>
+  <text x="212" y="252" fill="#111111" font-family="Inter, PingFang SC, sans-serif" font-size="18" font-weight="600">表达相容信号</text>
+  <text x="158" y="279" fill="#666666" font-family="Inter, PingFang SC, sans-serif" font-size="14">弱证据 · 风格、模板、段落突变</text>
+
+  <polygon points="150,334 530,334 560,318 180,318" fill="#EAF0FF" stroke="#2F6BFF" stroke-width="1.5"/>
+  <polygon points="150,334 530,334 530,416 150,416" fill="#FFFFFF" stroke="#2F6BFF" stroke-width="1.5"/>
+  <circle cx="530" cy="334" r="6" fill="#2F6BFF"/>
+  <text x="182" y="368" fill="#2F6BFF" font-family="Inter, PingFang SC, sans-serif" font-size="22" font-weight="700">E2</text>
+  <text x="236" y="368" fill="#111111" font-family="Inter, PingFang SC, sans-serif" font-size="18" font-weight="600">内容核验信号</text>
+  <text x="182" y="395" fill="#666666" font-family="Inter, PingFang SC, sans-serif" font-size="14">核心 · 口径、所有权、因果链</text>
+
+  <polygon points="174,450 554,450 584,434 204,434" fill="#F5F5F5" stroke="#222222"/>
+  <polygon points="174,450 554,450 554,532 174,532" fill="#FFFFFF" stroke="#222222"/>
+  <text x="206" y="484" fill="#111111" font-family="Inter, PingFang SC, sans-serif" font-size="22" font-weight="700">E3</text>
+  <text x="260" y="484" fill="#111111" font-family="Inter, PingFang SC, sans-serif" font-size="18" font-weight="600">可核验来源证据</text>
+  <text x="206" y="511" fill="#666666" font-family="Inter, PingFang SC, sans-serif" font-size="14">披露 · 修订记录 · 可靠水印</text>
+
+  <line x1="548" y1="258" x2="724" y2="258" stroke="#222222" marker-end="url(#arrow)"/>
+  <line x1="572" y1="374" x2="724" y2="374" stroke="#2F6BFF" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="596" y1="490" x2="724" y2="490" stroke="#222222" marker-end="url(#arrow)"/>
+
+  <text x="760" y="238" fill="#999999" font-family="Inter, PingFang SC, sans-serif" font-size="13">回答</text>
+  <text x="760" y="270" fill="#111111" font-family="Inter, PingFang SC, sans-serif" font-size="22" font-weight="600">是否值得看上下文？</text>
+  <text x="760" y="354" fill="#2F6BFF" font-family="Inter, PingFang SC, sans-serif" font-size="13">回答</text>
+  <text x="760" y="386" fill="#111111" font-family="Inter, PingFang SC, sans-serif" font-size="22" font-weight="700">下一轮核验什么？</text>
+  <text x="760" y="470" fill="#999999" font-family="Inter, PingFang SC, sans-serif" font-size="13">回答</text>
+  <text x="760" y="502" fill="#111111" font-family="Inter, PingFang SC, sans-serif" font-size="22" font-weight="600">是否确认 AI 参与？</text>
+
+  <text x="96" y="598" fill="#999999" font-family="Inter, PingFang SC, sans-serif" font-size="12">E3 确认生成链路，也不能单独证明经历失实</text>
+</svg>

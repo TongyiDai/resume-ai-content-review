@@ -1,0 +1,22 @@
+{
+  "canvas": {"width": 1200, "height": 675, "ratio": "16:9", "background": "#FFFFFF", "grid": 8},
+  "intent": {
+    "core_message": "从原文证据出发，经替代解释生成中性核验问题",
+    "composition": "axis-flow",
+    "focus_node": "questions"
+  },
+  "style": {"theme": "geometry-minimal", "accent_color": "#2F6BFF", "line_weight": 1, "corner_radius": 0},
+  "nodes": [
+    {"id": "resume", "type": "point", "label": "简历原文", "importance": 3},
+    {"id": "signals", "type": "point", "label": "分层信号", "importance": 3},
+    {"id": "alternatives", "type": "point", "label": "替代解释", "importance": 4},
+    {"id": "questions", "type": "circle", "label": "核验问题", "importance": 5},
+    {"id": "human", "type": "point", "label": "人类复核", "importance": 4}
+  ],
+  "edges": [
+    {"from": "resume", "to": "signals", "relation": "只记事实"},
+    {"from": "signals", "to": "alternatives", "relation": "主动反证"},
+    {"from": "alternatives", "to": "questions", "relation": "转成问题"},
+    {"from": "questions", "to": "human", "relation": "支持判断"}
+  ]
+}

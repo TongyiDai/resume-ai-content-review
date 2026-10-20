@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "subject": {
+    "anonymous_id": "candidate-a",
+    "sections_reviewed": ["summary", "experience", "skills"],
+    "job_context_provided": true,
+    "text_limitations": []
+  },
+  "conclusion": {
+    "ai_attribution": "assistance_compatible_signals",
+    "verification_need": "targeted",
+    "summary": "部分表达与模板化或 AI 辅助相容，但来源无法归因；两项成果需要在面试中核验口径与个人贡献。"
+  },
+  "signals": [
+    {
+      "id": "S1",
+      "evidence_level": "E1",
+      "excerpt": "通过数据驱动方法赋能业务增长",
+      "observation": "连续经历使用相同抽象句式，缺少具体对象",
+      "why_relevant": "这种表达与模板化写作或 AI 辅助相容",
+      "alternative_explanations": ["职业顾问统一润色", "候选人为压缩篇幅使用模板"],
+      "implication": "style_only"
+    },
+    {
+      "id": "S2",
+      "evidence_level": "E2",
+      "excerpt": "推动收入增长 300%",
+      "observation": "缺少基线、时间窗口和个人贡献边界",
+      "why_relevant": "无法从简历判断指标口径和因果归属",
+      "alternative_explanations": ["简历篇幅限制省略了口径"],
+      "implication": "verify_claim"
+    }
+  ],
+  "counter_evidence": [
+    {
+      "excerpt": "本人负责实验分组与六周复盘",
+      "observation": "提供个人边界和时间窗口",
+      "why_it_matters": "具体细节降低了对应项目的核验优先级"
+    }
+  ],
+  "verification_plan": [
+    {
+      "target_signal_ids": ["S2"],
+      "primary_question": "300% 的增长指标具体怎么定义？",
+      "follow_up": "基线、时间窗口和你亲自负责的部分分别是什么？",
+      "good_evidence": "能说明指标口径、数据来源、协作边界和合理因果链"
+    }
+  ],
+  "fairness_checks": {
+    "no_automatic_rejection": true,
+    "no_candidate_ranking": true,
+    "no_protected_attribute_inference": true,
+    "language_background_considered": true,
+    "template_and_editor_alternatives_considered": true,
+    "pii_minimized": true
+  },
+  "hiring_action": {
+    "next_step": "structured_verification",
+    "prohibited_use_acknowledged": true,
+    "note": "本报告只用于准备核验问题，最终决定由人类招聘决策者作出。"
+  }
+}

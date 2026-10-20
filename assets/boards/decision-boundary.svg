@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">报告只用于核验</title>
+  <desc id="desc">矩阵区分允许的低后果核验动作与禁止的高后果自动决策。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#222222"/></marker>
+  </defs>
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <text x="96" y="92" fill="#111111" font-family="Inter, PingFang SC, sans-serif" font-size="34" font-weight="700">报告只用于核验</text>
+  <text x="96" y="126" fill="#666666" font-family="Inter, PingFang SC, sans-serif" font-size="16">越接近招聘决定，越不能依赖文本来源推断</text>
+
+  <rect x="214" y="190" width="432" height="328" fill="#F5F5F5"/>
+  <rect x="646" y="190" width="360" height="328" fill="#FFFFFF" stroke="#2F6BFF" stroke-width="1.5"/>
+  <line x1="214" y1="518" x2="1038" y2="518" stroke="#222222" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="214" y1="518" x2="214" y2="160" stroke="#222222" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="646" y1="190" x2="646" y2="518" stroke="#2F6BFF" stroke-width="1.5" stroke-dasharray="6 6"/>
+
+  <text x="430" y="222" text-anchor="middle" fill="#666666" font-family="Inter, PingFang SC, sans-serif" font-size="15" font-weight="600">禁止：高后果自动决策</text>
+  <text x="826" y="222" text-anchor="middle" fill="#2F6BFF" font-family="Inter, PingFang SC, sans-serif" font-size="15" font-weight="700">允许：低后果人工核验</text>
+
+  <circle cx="354" cy="322" r="10" fill="#999999"/>
+  <text x="374" y="328" fill="#111111" font-family="Inter, PingFang SC, sans-serif" font-size="17">自动淘汰</text>
+  <circle cx="478" cy="416" r="10" fill="#999999"/>
+  <text x="498" y="422" fill="#111111" font-family="Inter, PingFang SC, sans-serif" font-size="17">按 AI 味排名</text>
+  <circle cx="540" cy="278" r="10" fill="#999999"/>
+  <text x="560" y="284" fill="#111111" font-family="Inter, PingFang SC, sans-serif" font-size="17">真假定罪</text>
+
+  <circle cx="758" cy="408" r="10" fill="#2F6BFF"/>
+  <text x="778" y="414" fill="#111111" font-family="Inter, PingFang SC, sans-serif" font-size="17">请求补充材料</text>
+  <circle cx="820" cy="326" r="12" fill="#2F6BFF"/>
+  <text x="842" y="332" fill="#111111" font-family="Inter, PingFang SC, sans-serif" font-size="17" font-weight="600">结构化追问</text>
+  <circle cx="914" cy="268" r="10" fill="#2F6BFF"/>
+  <text x="934" y="274" fill="#111111" font-family="Inter, PingFang SC, sans-serif" font-size="17">人工复核</text>
+
+  <text x="626" y="570" text-anchor="middle" fill="#666666" font-family="Inter, PingFang SC, sans-serif" font-size="13">更可逆、更接近信息收集</text>
+  <text x="150" y="354" transform="rotate(-90 150 354)" text-anchor="middle" fill="#666666" font-family="Inter, PingFang SC, sans-serif" font-size="13">对候选人的后果更高</text>
+  <text x="96" y="614" fill="#999999" font-family="Inter, PingFang SC, sans-serif" font-size="12">最终招聘决定必须由有权的人类决策者作出</text>
+</svg>

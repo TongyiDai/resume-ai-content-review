@@ -1,0 +1,22 @@
+{
+  "canvas": {"width": 1200, "height": 675, "ratio": "16:9", "background": "#FFFFFF", "grid": 8},
+  "intent": {
+    "core_message": "三类证据回答三个问题，不能相加成 AI 含量",
+    "composition": "layered-architecture",
+    "focus_node": "e2"
+  },
+  "style": {"theme": "geometry-minimal", "accent_color": "#2F6BFF", "line_weight": 1, "corner_radius": 0},
+  "nodes": [
+    {"id": "e1", "type": "plane", "label": "E1 表达信号", "importance": 2},
+    {"id": "e2", "type": "plane", "label": "E2 内容核验", "importance": 5},
+    {"id": "e3", "type": "plane", "label": "E3 来源证据", "importance": 3},
+    {"id": "style", "type": "point", "label": "只能提示相容", "importance": 2},
+    {"id": "verify", "type": "point", "label": "决定核验重点", "importance": 4},
+    {"id": "source", "type": "point", "label": "确认生成链路", "importance": 3}
+  ],
+  "edges": [
+    {"from": "e1", "to": "style", "relation": "回答"},
+    {"from": "e2", "to": "verify", "relation": "回答"},
+    {"from": "e3", "to": "source", "relation": "回答"}
+  ]
+}

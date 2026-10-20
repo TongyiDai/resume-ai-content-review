@@ -1,0 +1,20 @@
+{
+  "canvas": {"width": 1200, "height": 675, "ratio": "16:9", "background": "#FFFFFF", "grid": 8},
+  "intent": {
+    "core_message": "不要猜 AI 百分比，要把不确定性转成可核验问题",
+    "composition": "tension-contrast",
+    "focus_node": "verification"
+  },
+  "style": {"theme": "geometry-minimal", "accent_color": "#2F6BFF", "line_weight": 1, "corner_radius": 0},
+  "nodes": [
+    {"id": "percentage", "type": "circle", "label": "伪精确百分比", "importance": 2},
+    {"id": "uncertainty", "type": "line", "label": "误报与偏差", "importance": 3},
+    {"id": "verification", "type": "circle", "label": "可复核问题", "importance": 5},
+    {"id": "decision", "type": "point", "label": "人类决策", "importance": 4}
+  ],
+  "edges": [
+    {"from": "percentage", "to": "uncertainty", "relation": "放大"},
+    {"from": "uncertainty", "to": "verification", "relation": "改写"},
+    {"from": "verification", "to": "decision", "relation": "支持"}
+  ]
+}
