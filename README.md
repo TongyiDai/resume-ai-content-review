@@ -77,11 +77,11 @@ mkdir -p "$HOME/.agents/skills"
 ln -s "$PWD/resume-ai-content-review" "$HOME/.agents/skills/resume-ai-content-review"
 ```
 
-也可以让 Codex 的 `$skill-installer` 从这个 GitHub 仓库安装。Codex 通常会自动发现变更；若未出现，重启 Codex。安装方式参考 [OpenAI Codex Skills 文档](https://developers.openai.com/codex/skills)。
+也可以让 Codex 的 `$skill-installer` 从这个 GitHub 仓库安装。Codex 通常会自动发现变更；若未出现，重启 Codex。安装方式参考 [OpenAI Codex Skills 文档](https://learn.chatgpt.com/docs/build-skills.md)。
 
 ### 豆包工作
 
-下载仓库或 Release ZIP，在豆包工作的「技能」页面选择「上传技能」，上传整个文件夹或 ZIP。仓库根目录已经包含带 YAML `name` 与 `description` 的 `SKILL.md`，符合豆包工作的自定义技能要求。参考 [豆包工作官方帮助](https://www.doubao.com/work/docs/zh-cn/articles/081010973544-skills)。
+从 Release 下载文件名带 `doubao-work` 的兼容包，在豆包工作的「技能」页面选择「上传技能」，上传整个 ZIP。兼容包把标准入口 `SKILL.md` 映射为官方帮助要求的小写 `skill.md`，内容与仓库版本一致。参考 [豆包工作官方帮助](https://www.doubao.com/work/docs/zh-cn/articles/081010973544-skills)。
 
 ### 其他 Agent
 
@@ -104,6 +104,17 @@ ln -s "$PWD/resume-ai-content-review" "$HOME/.agents/skills/resume-ai-content-re
 默认报告包含：结论、证据与替代解释、降低疑虑的证据、核验计划和允许的下一步招聘动作。完整字段见 [output-contract.md](references/output-contract.md)。
 
 ## 机器可读报告
+
+在生成报告前，可选先对已提取的 UTF-8 文本或 Markdown 做本地特征定位：
+
+```bash
+python3 scripts/analyze_resume.py tests/fixtures/synthetic_resume.md --format markdown
+python3 scripts/analyze_resume.py tests/fixtures/synthetic_resume.md --format json
+```
+
+这个脚本只测量量化覆盖、句长变化、重复开头、模板短语与弱证据表述。它不会输出 AI 概率，也不会给出录用建议；不能运行 Python 时，主 Skill 仍可只依赖 `SKILL.md` 与 `references/` 完成审阅。
+
+Agent 生成 JSON 审阅报告后，再运行输出契约校验器：
 
 ```bash
 python3 scripts/validate_review.py tests/fixtures/valid-review.json
@@ -139,8 +150,10 @@ resume-ai-content-review/
 ├── SKILL.md                    # 核心工作流与强制边界
 ├── agents/openai.yaml          # Codex / ChatGPT UI 元数据
 ├── references/                 # 证据框架、研究依据、案例、输出协议
-├── scripts/validate_review.py  # 零依赖 JSON 报告校验器
-├── tests/                      # 合成 fixture 与单元测试
+├── scripts/
+│   ├── analyze_resume.py       # 零依赖、本地、非判定式特征提取
+│   └── validate_review.py      # 零依赖 JSON 报告校验器
+├── tests/                      # 合成简历、报告 fixture 与单元测试
 └── assets/boards/              # Geometry Blue 图示与 Scene JSON
 ```
 
@@ -149,7 +162,7 @@ resume-ai-content-review/
 - Skill frontmatter 和目录结构通过 `quick_validate.py`；
 - 4 张图示的 Scene JSON 通过 Geometry Board 结构校验；
 - Python 3.8 与 3.12 进入 CI 矩阵；
-- 单元测试覆盖合法报告、AI 百分比、自动淘汰、E2 无追问、E3 无来源证据和缺失替代解释；
+- 单元测试覆盖原文特征提取、短文本停止条件、合法报告、AI 百分比、自动淘汰、E2 无追问、E3 无来源证据和缺失替代解释；
 - 维护 10 条应触发与 10 条不应触发的查询清单，用于复核 description 的触发边界；
 - 所有示例均为合成内容，不含候选人真实数据。
 

@@ -52,6 +52,14 @@ description: 简历 AI 含量识别与核验：审阅候选人简历、求职信
 - 是否提供岗位描述；
 - 是否存在模板、专业编辑、翻译或多人协作等已知背景。
 
+对纯文本或 Markdown，可选运行本地特征提取器：
+
+```bash
+python3 scripts/analyze_resume.py path/to/resume.md --format markdown
+```
+
+它只测量要点数量、量化覆盖、句式长度变化、重复开头和已配置短语，帮助定位需人工阅读的片段；不输出 AI 概率，不确认作者身份，也不产生招聘建议。PDF、DOCX 或图片应先用宿主 Agent 的本地能力提取成文本。若宿主不能执行 Python，跳过脚本并继续人工审阅，不为运行脚本安装未知依赖。脚本结果最多补充 E1 定位或 E2 核验线索，绝不能被当作 E3 来源证据。
+
 ### 3. 做三类证据审阅
 
 读取 [evidence-framework.md](references/evidence-framework.md)，逐条记录证据，不凭整体观感下结论。

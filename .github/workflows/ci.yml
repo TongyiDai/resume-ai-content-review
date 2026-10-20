@@ -29,5 +29,7 @@ jobs:
           PY
       - name: Run tests
         run: python -m unittest discover -s tests -v
+      - name: Exercise source-text analysis
+        run: python scripts/analyze_resume.py tests/fixtures/synthetic_resume.md --format json > /tmp/resume-features.json
       - name: Validate example report
         run: python scripts/validate_review.py tests/fixtures/valid-review.json
