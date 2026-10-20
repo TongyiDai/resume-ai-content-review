@@ -16,7 +16,7 @@ from collections import Counter
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Sequence, Tuple
 
-VERSION = "1.0.1"
+VERSION = "1.0.2"
 MIN_REVIEW_CHARS = 120
 MIN_REVIEW_BULLETS = 3
 
