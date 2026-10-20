@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">线索不是裁决</title>
+  <desc id="desc">文本线索必须经过人工核验并结合岗位证据，不能直接通向自动淘汰。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#222222"/></marker>
+    <marker id="arrowBlue" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#2F6BFF"/></marker>
+  </defs>
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <g font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">
+    <text x="96" y="84" font-size="34" font-weight="700" fill="#111111">线索可以触发核验，不能直接淘汰</text>
+    <text x="96" y="120" font-size="16" fill="#666666">真正进入招聘决定的，是岗位相关证据与一致的人类判断</text>
+
+    <g>
+      <circle cx="190" cy="330" r="72" fill="#FFFFFF" stroke="#222222" stroke-width="1.5"/>
+      <circle cx="190" cy="330" r="7" fill="#2F6BFF"/>
+      <text x="190" y="430" text-anchor="middle" font-size="21" font-weight="600" fill="#111111">文本线索</text>
+    </g>
+
+    <path d="M262 330H430" fill="none" stroke="#2F6BFF" stroke-width="2" marker-end="url(#arrowBlue)"/>
+    <text x="346" y="310" text-anchor="middle" font-size="13" fill="#666666">只触发</text>
+
+    <g>
+      <rect x="446" y="230" width="266" height="200" fill="#FFFFFF" stroke="#2F6BFF" stroke-width="2"/>
+      <line x1="478" y1="280" x2="680" y2="280" stroke="#E8E8E8"/>
+      <text x="579" y="326" text-anchor="middle" font-size="25" font-weight="700" fill="#111111">人工核验</text>
+      <text x="579" y="362" text-anchor="middle" font-size="15" fill="#666666">统一问题 · 独立证据</text>
+      <text x="579" y="389" text-anchor="middle" font-size="15" fill="#666666">岗位标准 · 替代解释</text>
+    </g>
+
+    <path d="M712 330H890" fill="none" stroke="#222222" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <text x="801" y="310" text-anchor="middle" font-size="13" fill="#666666">结合证据</text>
+
+    <g>
+      <path d="M908 258H1080V402H908Z" fill="#F5F5F5" stroke="#222222" stroke-width="1.5"/>
+      <text x="994" y="324" text-anchor="middle" font-size="24" font-weight="700" fill="#111111">岗位决定</text>
+      <text x="994" y="356" text-anchor="middle" font-size="14" fill="#666666">由人负责</text>
+    </g>
+
+    <path d="M278 460C430 590 740 590 910 470" fill="none" stroke="#B8B8B8" stroke-width="1.5" stroke-dasharray="6 7"/>
+    <g opacity="0.75">
+      <rect x="505" y="506" width="150" height="56" fill="#FFFFFF" stroke="#999999"/>
+      <text x="580" y="541" text-anchor="middle" font-size="17" fill="#666666">自动淘汰</text>
+      <line x1="489" y1="490" x2="671" y2="578" stroke="#666666" stroke-width="2"/>
+      <line x1="671" y1="490" x2="489" y2="578" stroke="#666666" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

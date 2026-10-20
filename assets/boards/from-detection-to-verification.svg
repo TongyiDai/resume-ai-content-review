@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">从 AI 百分比转向证据核验</title>
+  <desc id="desc">简历原文经过介入线索与内容风险两个视角，形成结构化追问，最终支持人工判断。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#222222"/></marker>
+    <marker id="arrowBlue" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#2F6BFF"/></marker>
+  </defs>
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <g font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">
+    <text x="96" y="84" font-size="34" font-weight="700" fill="#111111">别猜 AI 百分比，去核验关键内容</text>
+    <text x="96" y="120" font-size="16" fill="#666666">把不稳定的作者判断，改成可解释、可追问、可复核的招聘路径</text>
+
+    <g transform="translate(96 248)">
+      <path d="M0 0H152L184 32V184H0Z" fill="#FFFFFF" stroke="#222222" stroke-width="1.5"/>
+      <path d="M152 0V32H184" fill="none" stroke="#222222" stroke-width="1.5"/>
+      <line x1="32" y1="64" x2="145" y2="64" stroke="#B8B8B8"/>
+      <line x1="32" y1="92" x2="152" y2="92" stroke="#B8B8B8"/>
+      <line x1="32" y1="120" x2="130" y2="120" stroke="#B8B8B8"/>
+      <text x="92" y="226" text-anchor="middle" font-size="18" font-weight="600" fill="#111111">简历原文</text>
+    </g>
+
+    <path d="M280 340C342 340 370 340 412 340" fill="none" stroke="#222222" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+    <g opacity="0.62">
+      <circle cx="356" cy="228" r="58" fill="#FFFFFF" stroke="#999999" stroke-dasharray="5 5"/>
+      <text x="356" y="222" text-anchor="middle" font-size="21" font-weight="700" fill="#666666">87% AI?</text>
+      <text x="356" y="248" text-anchor="middle" font-size="12" fill="#999999">伪精度</text>
+      <line x1="314" y1="186" x2="398" y2="270" stroke="#666666" stroke-width="1.5"/>
+    </g>
+
+    <g>
+      <rect x="424" y="232" width="300" height="216" fill="#FFFFFF" stroke="#2F6BFF" stroke-width="2"/>
+      <text x="574" y="278" text-anchor="middle" font-size="24" font-weight="700" fill="#111111">证据核验</text>
+      <line x1="468" y1="304" x2="680" y2="304" stroke="#E8E8E8"/>
+      <circle cx="482" cy="348" r="6" fill="#2F6BFF"/>
+      <text x="502" y="354" font-size="17" fill="#222222">AI 介入线索</text>
+      <circle cx="482" cy="397" r="6" fill="#2F6BFF"/>
+      <text x="502" y="403" font-size="17" fill="#222222">内容核验风险</text>
+    </g>
+
+    <path d="M724 340H806" fill="none" stroke="#2F6BFF" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+    <g>
+      <path d="M824 250H1030V412H824Z" fill="#F5F5F5" stroke="#222222" stroke-width="1.5"/>
+      <line x1="856" y1="292" x2="997" y2="292" stroke="#B8B8B8"/>
+      <line x1="856" y1="326" x2="982" y2="326" stroke="#B8B8B8"/>
+      <line x1="856" y1="360" x2="968" y2="360" stroke="#B8B8B8"/>
+      <text x="927" y="454" text-anchor="middle" font-size="18" font-weight="600" fill="#111111">结构化追问</text>
+    </g>
+
+    <path d="M1030 340H1090" fill="none" stroke="#222222" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <circle cx="1110" cy="340" r="10" fill="#2F6BFF"/>
+    <text x="1110" y="382" text-anchor="middle" font-size="16" font-weight="600" fill="#111111">人工判断</text>
+
+    <line x1="96" y1="548" x2="1104" y2="548" stroke="#E8E8E8"/>
+    <text x="96" y="588" font-size="20" font-weight="600" fill="#111111">线索只负责定位，问题负责核验，人负责决策。</text>
+  </g>
+</svg>

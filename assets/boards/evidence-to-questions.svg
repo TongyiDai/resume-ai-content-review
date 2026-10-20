@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">从证据账本到结构化追问</title>
+  <desc id="desc">原文短引经过现象、替代解释和岗位影响判断，最终形成结构化核验问题。</desc>
+  <defs><marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#222222"/></marker></defs>
+  <rect width="1200" height="675" fill="#FFFFFF"/>
+  <g font-family="Inter, PingFang SC, Noto Sans CJK SC, sans-serif">
+    <text x="96" y="84" font-size="34" font-weight="700" fill="#111111">每条怀疑，都要落到一个公平问题</text>
+    <text x="96" y="120" font-size="16" fill="#666666">没有原文定位、替代解释和岗位影响，就不进入核验</text>
+
+    <line x1="128" y1="342" x2="1050" y2="342" stroke="#222222" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+    <g>
+      <circle cx="160" cy="342" r="8" fill="#FFFFFF" stroke="#222222" stroke-width="1.5"/>
+      <text x="160" y="286" text-anchor="middle" font-size="20" font-weight="600" fill="#111111">原文短引</text>
+      <text x="160" y="402" text-anchor="middle" font-size="13" fill="#666666">先能定位</text>
+    </g>
+    <g>
+      <circle cx="374" cy="342" r="8" fill="#FFFFFF" stroke="#222222" stroke-width="1.5"/>
+      <text x="374" y="286" text-anchor="middle" font-size="20" font-weight="600" fill="#111111">可观察现象</text>
+      <text x="374" y="402" text-anchor="middle" font-size="13" fill="#666666">只描述文本</text>
+    </g>
+    <g>
+      <circle cx="588" cy="342" r="8" fill="#FFFFFF" stroke="#222222" stroke-width="1.5"/>
+      <text x="588" y="286" text-anchor="middle" font-size="20" font-weight="600" fill="#111111">替代解释</text>
+      <text x="588" y="402" text-anchor="middle" font-size="13" fill="#666666">避免选择性怀疑</text>
+    </g>
+    <g>
+      <circle cx="802" cy="342" r="8" fill="#FFFFFF" stroke="#222222" stroke-width="1.5"/>
+      <text x="802" y="286" text-anchor="middle" font-size="20" font-weight="600" fill="#111111">岗位影响</text>
+      <text x="802" y="402" text-anchor="middle" font-size="13" fill="#666666">决定优先级</text>
+    </g>
+
+    <g>
+      <circle cx="1040" cy="342" r="76" fill="#FFFFFF" stroke="#2F6BFF" stroke-width="2"/>
+      <circle cx="1040" cy="342" r="7" fill="#2F6BFF"/>
+      <text x="1040" y="454" text-anchor="middle" font-size="22" font-weight="700" fill="#111111">结构化追问</text>
+    </g>
+
+    <path d="M160 342C202 248 318 248 374 342" fill="none" stroke="#E8E8E8"/>
+    <path d="M374 342C420 436 536 436 588 342" fill="none" stroke="#E8E8E8"/>
+    <path d="M588 342C634 248 750 248 802 342" fill="none" stroke="#E8E8E8"/>
+
+    <line x1="96" y1="536" x2="1104" y2="536" stroke="#E8E8E8"/>
+    <text x="96" y="578" font-size="20" font-weight="600" fill="#111111">从“像 AI”走到“请解释这个结果是怎么来的”。</text>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+{
+  "note": "Manual trigger review set; expected values are not runtime assertions.",
+  "should_trigger": [
+    "帮我看看这份简历有多少 AI 痕迹",
+    "这份 CV 是不是 ChatGPT 写的？",
+    "识别候选人简历里的 AI 含量",
+    "这批申请材料是不是模板化生成的？",
+    "帮 HR 核验这份简历里过于完美的成果描述",
+    "Review this resume for AI-assisted writing signals",
+    "Generate interview questions to verify these resume claims",
+    "这封求职信有没有机器生成痕迹",
+    "别下结论，帮我找出简历里需要进一步核实的地方",
+    "候选人的项目经历像 AI 润色，怎么公平地追问？"
+  ],
+  "should_not_trigger": [
+    "帮我写一份产品经理简历",
+    "把我的中文简历翻译成英文",
+    "给这份简历排版",
+    "把候选人简历录入 ATS",
+    "按岗位要求给候选人打分",
+    "为面试官准备通用面试题",
+    "检查这篇论文是否由 AI 写成",
+    "检测这篇新闻稿的抄袭率",
+    "优化招聘 JD 的措辞",
+    "从简历中提取电话号码和邮箱"
+  ]
+}

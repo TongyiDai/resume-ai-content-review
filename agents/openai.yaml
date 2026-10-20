@@ -1,0 +1,4 @@
+interface:
+  display_name: "简历AI含量识别"
+  short_description: "识别简历中的AI介入线索、内容核验风险并生成公平的结构化追问"
+  default_prompt: "Use $resume-ai-content-review to review this resume for AI-assistance signals and produce fair, evidence-based verification questions."
